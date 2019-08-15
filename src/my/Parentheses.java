@@ -1,39 +1,8 @@
-## 1.3
+package my;
 
-### 1.3.1
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
 
-```java
-public class FixedCapacityStackOfStrings {
-//...
-   public boolean isFull() {
-       return N == a.length;
-   }
-//...
-}
-```
-
-Referenced to [FixedCapacityStackOfStrings.java](my/FixedCapacityStackOfStrings.java).
-
-### 1.3.2
-
-```
-was best times of the was the it (1 left on stack)
-```
-
-### 1.3.3
-
-- a. YES
-- b. NO
-- c. YES
-- d. YES
-- e. YES
-- f. NO
-- g. NO
-- h. YES
-
-### 1.3.4
-
-```java
 public class Parentheses {
     public static boolean isPaired(String str) {
         Stack<Character> s = new Stack<Character>();
@@ -68,29 +37,3 @@ public class Parentheses {
         }
     }
 }
-```
-
-Reference to [Parentheses.java](my/Parentheses.java).
-
-### 1.3.5
-
-Print the binary of *N*.
-
-### 1.3.6
-
-Reverse queue *q*.
-
-### 1.3.7
-
-```java
-public Item peek() {
-    return first.item;
-}
-```
-
-Reference to [Stack.java](my/Stack.java).
-
-### 1.3.8
-
-*TBD*
-
