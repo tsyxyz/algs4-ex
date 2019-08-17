@@ -28,8 +28,8 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
     public void push(Item item) {
         if (N == a.length) {
             resize(2 * a.length);
-            a[N++] = item;
         }
+        a[N++] = item;
     }
 
     public Item pop() {
