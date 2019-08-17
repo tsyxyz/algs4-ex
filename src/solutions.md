@@ -70,7 +70,7 @@ public class Parentheses {
 }
 ```
 
-Reference to [Parentheses.java](my/Parentheses.java).
+Referenced to [Parentheses.java](my/Parentheses.java).
 
 ### 1.3.5
 
@@ -88,9 +88,14 @@ public Item peek() {
 }
 ```
 
-Reference to [Stack.java](my/Stack.java).
+Referenced to [Stack.java](my/Stack.java).
 
 ### 1.3.8
 
-*TBD*
+```
+it
+array size: 2
+```
+
+Referenced to [DoublingStackOfStrings.java](my/DoublingStackOfStrings.java).
 
