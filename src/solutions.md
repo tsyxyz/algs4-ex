@@ -99,3 +99,5 @@ array size: 2
 
 Referenced to [DoublingStackOfStrings.java](my/DoublingStackOfStrings.java).
 
+### 1.3.9
+
