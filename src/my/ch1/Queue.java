@@ -1,4 +1,4 @@
-package my;
+package my.ch1;
 
 import java.util.Iterator;
 import edu.princeton.cs.algs4.StdIn;

@@ -1,14 +1,13 @@
-package my;
+package my.ch1;
 
 import java.util.Iterator;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
-public class ResizingArrayStack<Item> implements Iterable<Item> {
-    private Item[] a = (Item[]) new Object[1];
-
+public class DoublingStackOfStrings implements Iterable<String> {
+    private String[] a = new String[1];
     private int N = 0;
-    
+
     public boolean isEmpty() {
         return N == 0;
     }
@@ -17,42 +16,46 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
         return N;
     }
 
+    public int arraySize() {
+        return a.length;
+    }
+
     private void resize(int max) {
-        Item[] temp = (Item[]) new Object[max];
+        String[] temp = new String[max];
         for (int i = 0; i < N; i++) {
             temp[i] = a[i];
         }
         a = temp;
     }
 
-    public void push(Item item) {
+    public void push(String s) {
         if (N == a.length) {
             resize(2 * a.length);
         }
-        a[N++] = item;
+        a[N++] = s;
     }
 
-    public Item pop() {
-        Item item = a[--N];
+    public String pop() {
+        String s = a[--N];
         a[N] = null;
         if (N > 0 && N == a.length / 4) {
             resize(a.length / 2);
         }
-        return item;
+        return s;
     }
 
-    public Iterator<Item> iterator() {
+    public Iterator<String> iterator() {
         return new ReverseArrayIterator();
     }
 
-    private class ReverseArrayIterator implements Iterator<Item> {
+    private class ReverseArrayIterator implements Iterator<String> {
         private int i = N;
 
         public boolean hasNext() {
             return i > 0;
         }
 
-        public Item next() {
+        public String next() {
             return a[--i];
         }
 
@@ -60,16 +63,18 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
     }
 
     public static void main(String[] args) {
-        ResizingArrayStack<String> s;
-        s = new ResizingArrayStack<String>();
+        DoublingStackOfStrings s = new DoublingStackOfStrings();
         while (!StdIn.isEmpty()) {
             String item = StdIn.readString();
             if (!item.equals("-")) {
                 s.push(item);
             } else if (!s.isEmpty()) {
-                StdOut.print(s.pop() + " ");
+                s.pop();
             }
         }
-        StdOut.println("(" + s.size() + " left on stack)");
+        for (String item : s) {
+            StdOut.printf("%s ", item);
+        }
+        StdOut.printf("%narray size: %d%n", s.arraySize());
     }
 }

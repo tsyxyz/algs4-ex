@@ -12,7 +12,7 @@ public class FixedCapacityStackOfStrings {
 }
 ```
 
-Referenced to [FixedCapacityStackOfStrings.java](my/FixedCapacityStackOfStrings.java).
+Referenced to [FixedCapacityStackOfStrings.java](my/ch1/FixedCapacityStackOfStrings.java).
 
 ### 1.3.2
 
@@ -70,7 +70,7 @@ public class Parentheses {
 }
 ```
 
-Referenced to [Parentheses.java](my/Parentheses.java).
+Referenced to [Parentheses.java](my/ch1/Parentheses.java).
 
 ### 1.3.5
 
@@ -88,7 +88,7 @@ public Item peek() {
 }
 ```
 
-Referenced to [Stack.java](my/Stack.java).
+Referenced to [Stack.java](my/ch1/Stack.java).
 
 ### 1.3.8
 
@@ -97,7 +97,7 @@ it
 array size: 2
 ```
 
-Referenced to [DoublingStackOfStrings.java](my/DoublingStackOfStrings.java).
+Referenced to [DoublingStackOfStrings.java](my/ch1/DoublingStackOfStrings.java).
 
 ### 1.3.9
 
@@ -133,4 +133,4 @@ public static void main(String[] args) {
 }
 ```
 
-Referenced to [CompleteParentheses.java](my/CompleteParentheses.java).
+Referenced to [CompleteParentheses.java](my/ch1/CompleteParentheses.java).
