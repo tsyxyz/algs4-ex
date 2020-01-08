@@ -20,3 +20,11 @@ Include path of algs4.jar to `CLASSPATH`:
 ```shell
 $ export CLASSPATH=$CLASSPATH:/Users/taoshaoyuan/code/algs4-ex/resource/algs4.jar
 ```
+
+## Run in terminal
+
+```shell
+$ javac src/xxx/yyy.java # compile
+$ cd src # must in src
+$ java xxx.yyy # run
+```
