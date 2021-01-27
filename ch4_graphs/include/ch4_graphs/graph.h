@@ -7,10 +7,10 @@ namespace ch4_graphs {
 
 class Graph {
 public:
-    Graph(int v);
+    explicit Graph(int v);
     // Graph(In in);
-    int v();
-    int e();
+    int v() const;
+    int e() const;
     void addEdge(int v, int w);
     std::vector<int> adj(int v);
     std::string toString();

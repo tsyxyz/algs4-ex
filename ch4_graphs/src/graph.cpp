@@ -7,11 +7,11 @@ Graph::Graph(int v)
     adj_.resize(v);
 }
 
-int Graph::v() {
+int Graph::v() const {
     return v_;
 }
 
-int Graph::e() {
+int Graph::e() const {
     return e_;
 }
 
